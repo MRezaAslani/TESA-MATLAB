@@ -1,6 +1,7 @@
 %--------------------------------------------------------------------------
 % Author: Mohammad Reza Aslani
-% Date: June 9, 2025
+% Contact: mr.aslani@shdu.ac.ir
+% License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/)
 % Description: DSCA-based signal decomposition using a composite chirp.
 %              Includes grouping of subbands, spectrogram visualization,
 %              and evaluation using SNR, RMSE, and correlation metrics.
