@@ -7,7 +7,6 @@ This folder contains MATLAB scripts for performing **image decomposition** using
 ## 📂 Files Included
 
 ### `main_image_demo.m`
-
 - Loads and preprocesses the `cameraman.tif` image
 - Applies DSCA to extract 512 spectral subbands and groups them into four main bands (VLF, MF, HF, VHF)
 - Applies DWT using `db4` wavelet for baseline comparison
@@ -15,8 +14,13 @@ This folder contains MATLAB scripts for performing **image decomposition** using
 - Displays spatial and frequency-domain visualizations of selected subbands
 
 ### `dsca.m`
-
 - Core DSCA algorithm for both 1D and 2D inputs (shared with signal decomposition)
+
+### `metrics_image.m`
+- Computes PSNR, SSIM, MSE, and maximum correlation between subbands
+
+### `normalize_subbands.m`
+- Normalizes the subbands so that their sum matches the dynamic range of the original image
 
 ---
 
@@ -52,8 +56,8 @@ This folder contains MATLAB scripts for performing **image decomposition** using
 
 All files are released under the **Creative Commons Attribution-NonCommercial 4.0 International License**.
 
-© 2025 Mohammad Reza Aslani\
-📧 [mr.aslani@shdu.ac.ir](mailto\:mr.aslani@shdu.ac.ir)
+© 2025 Mohammad Reza Aslani  
+📧 [mr.aslani@shdu.ac.ir](mailto:mr.aslani@shdu.ac.ir)
 
 ---
 
@@ -66,4 +70,3 @@ If you use this code, please cite:
 Authors: Mohammad Reza Aslani  
 Submitted to IEEE Transactions on Signal Processing
 ```
-
