@@ -48,6 +48,7 @@ SNR: 1.1950 dB
 RMSE: 0.2470
 Correlation: 0.6658
 ```
+```
 --- Evaluation Metrics for 'notch' Mode ---
 SNR: 1.1950 dB
 RMSE: 0.2470
