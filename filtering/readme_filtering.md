@@ -43,7 +43,12 @@ After filtering, the output signal is compared with the constructed target signa
 Example output:
 
 ```
---- Evaluation Metrics ---
+--- Evaluation Metrics for 'bpf' Mode ---
+SNR: 1.1950 dB
+RMSE: 0.2470
+Correlation: 0.6658
+```
+--- Evaluation Metrics for 'notch' Mode ---
 SNR: 1.1950 dB
 RMSE: 0.2470
 Correlation: 0.6658
