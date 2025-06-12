@@ -50,9 +50,9 @@ Correlation: 0.6658
 ```
 ```
 --- Evaluation Metrics for 'notch' Mode ---
-SNR: 1.1950 dB
-RMSE: 0.2470
-Correlation: 0.6658
+SNR: 0.2575 dB
+RMSE: 0.6831
+Correlation: 0.4809
 ```
 
 ---
