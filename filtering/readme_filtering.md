@@ -6,7 +6,7 @@ This folder contains MATLAB code for applying **Direct Sinusoidal Component Anal
 
 ## 📁 Files Included
 
-### `main_filter_demo.m`
+### `main_bandpass_filter_demo.m` and `main_notch_filter_demo.m`
 
 Main script for performing the filtering experiment:
 
