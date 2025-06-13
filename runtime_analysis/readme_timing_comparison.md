@@ -19,7 +19,7 @@ This folder presents timing comparisons between **Direct Sinusoidal Component An
 
 - The test script executes each method **100 times per signal length**, and averages are recorded.
 - DSCA uses the `fastDSCA` module.
-- DWT uses MATLAB's `wavedec` and `wrcoef` functions (db4, level 5).
+- DWT uses MATLAB's `wavedec` and `wrcoef` functions (db4, level 1).
 
 ---
 
@@ -60,7 +60,7 @@ The chart above shows that **DSCA** has **very low initial latency** for short s
 
 ## 📌 Observations
 
-- DSCA is faster for signals shorter than ~250 samples.
+- DSCA is faster for signals shorter than ~300 samples.
 - DSCA timing grows with signal length due to per-frequency component synthesis.
 - DWT shows fixed-cost behavior thanks to recursive structure.
 
