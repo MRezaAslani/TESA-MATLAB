@@ -56,8 +56,7 @@ DSCA-MATLAB/
 ├── filtering/
 ├── mask_extraction/
 ├── tf_decomposition/
-├── utils/               % Shared helper functions
-└── results/             % Optional: Figures and visual outputs
+└── runtime_analysis/             
 ```
 
 ---
