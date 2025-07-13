@@ -1,6 +1,6 @@
-# DSCA-MATLAB
+# CCA-MATLAB
 
-**Direct Sinusoidal Component Analysis (DSCA)** is a novel spectral decomposition framework for signal and image processing. This repository contains MATLAB implementations of DSCA and demonstrates its capabilities across several applications, including frequency subband decomposition, bandpass filtering, time-frequency region extraction, and component separation.
+**Correlation Coefficients Adjustment (CCA)** is a novel spectral decomposition framework for signal and image processing. This repository contains MATLAB implementations of CCA and demonstrates its capabilities across several applications, including frequency subband decomposition, bandpass filtering, time-frequency region extraction, and component separation.
 
 ---
 
@@ -10,21 +10,20 @@
 
 - Decomposes synthetic signals (e.g., chirp signals) into narrow spectral components
 - Visualizes time-domain waveforms and spectrograms for each subband
-- Evaluates reconstruction accuracy using SNR, RMSE, and correlation
-
-📁 Code: `signal_decomposition/`
+- Evaluates reconstruction accuracy using SNR, MSE, and PCC
+📁 Code: `subband_decomposition/ signal_decomposition/`
 
 ### 2. Image Subband Decomposition
 
 - Decomposes images (e.g., Cameraman) into interpretable spectral bands
 - Compares results with DWT-based subband analysis
-- Computes PSNR and SSIM for quantitative evaluation
+- Computes SNR, MSE, and PCC for quantitative evaluation
 
-📁 Code: `image_decomposition/`
+📁 Code: `subband_decomposition/ image_decomposition/`
 
-### 3. Bandpass and Notch Filtering
+### 3. Bandpass and Bandstop Filtering
 
-- Selectively retains or suppresses time-frequency regions using DSCA
+- Selectively retains or suppresses time-frequency regions using CCA
 - Demonstrates both passband and stopband behavior using masking
 
 📁 Code: `filtering/`
@@ -48,15 +47,13 @@
 ## 📦 Repository Structure
 
 ```
-DSCA-MATLAB/
+CCA-MATLAB/
 ├── README.md
 ├── LICENSE
-├── signal_decomposition/
-├── image_decomposition/
+├── subband_decomposition/
 ├── filtering/
 ├── mask_extraction/
-├── tf_decomposition/
-└── runtime_analysis/             
+└── tf_decomposition/             
 ```
 
 ---
