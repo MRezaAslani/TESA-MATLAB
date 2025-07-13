@@ -1,6 +1,6 @@
-# Application 4: Time-Frequency Decomposition using DSCA
+# Application 4: Time-Frequency Decomposition using CCA
 
-This folder contains MATLAB code and results demonstrating **time-frequency decomposition** of non-stationary signals using the **Direct Sinusoidal Component Analysis (DSCA)** method.
+This folder contains MATLAB code and results demonstrating **time-frequency decomposition** of non-stationary signals using the **Correlation Coefficients Adjustment (CCA)** method.
 
 ---
 
@@ -11,7 +11,7 @@ This folder contains MATLAB code and results demonstrating **time-frequency deco
 - Main script for performing signal decomposition.
 - Generates a multi-component non-stationary signal.
 - Computes the STFT-based spectrogram.
-- Applies DSCA decomposition by segmenting the spectrogram into distinct time-frequency components.
+- Applies CCA decomposition by segmenting the spectrogram into distinct time-frequency components.
 - Visualizes the original signal, decomposed components, and corresponding spectrograms.
 
 ### `functions/`
@@ -19,26 +19,26 @@ This folder contains MATLAB code and results demonstrating **time-frequency deco
 | File                            | Description                                                            |
 | ------------------------------- | ---------------------------------------------------------------------- |
 | `generateNonStationarySignal.m` | Generates a non-stationary synthetic signal with random components     |
-| `dscaExtraction.m`              | Extracts signal components from a target spectrogram using DSCA        |
+| `ccaExtraction.m`              | Extracts signal components from a target spectrogram using CCA        |
 | `decomposeBinaryComponents.m`   | Segments binary spectrogram image into individual connected components |
 
 ---
 
 ## 🎡 Objective
 
-The goal of this experiment is to evaluate the capability of DSCA in **separating multiple overlapping time-frequency components** from a complex signal.
+The goal of this experiment is to evaluate the capability of CCA in **separating multiple overlapping time-frequency components** from a complex signal.
 
 - The input signal is synthesized by randomly assigning multiple sinusoidal bursts across time.
 - A binary spectrogram is constructed to locate dominant time-frequency regions.
-- DSCA is applied to extract and reconstruct each region as a separate component.
+- CCA is applied to extract and reconstruct each region as a separate component.
 
-This demonstrates DSCA's strength in **adaptive segmentation** of non-stationary signals.
+This demonstrates CCA's strength in **adaptive segmentation** of non-stationary signals.
 
 ---
 
 ## 📊 Observations
 
-- The DSCA decomposition successfully identifies and isolates dominant energy components from the time-frequency plane.
+- The CCA decomposition successfully identifies and isolates dominant energy components from the time-frequency plane.
 - Visual inspection of spectrograms confirms that each component captures a unique frequency pattern.
 - The correlation between reconstructed subcomponents is low, indicating **informative and non-overlapping decomposition**.
 - Quantitative metrics for reconstruction accuracy:
