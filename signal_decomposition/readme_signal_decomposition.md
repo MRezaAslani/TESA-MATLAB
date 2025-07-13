@@ -1,6 +1,6 @@
-# Signal Subband Decomposition using DSCA
+# Signal Subband Decomposition using CCA
 
-This folder contains MATLAB scripts for performing **signal decomposition** using the proposed **Direct Sinusoidal Component Analysis (DSCA)** method. The goal is to decompose a composite signal (e.g., overlapping chirps) into interpretable frequency subbands, visualize their spectral content, and evaluate reconstruction accuracy.
+This folder contains MATLAB scripts for performing **signal decomposition** using the proposed **Correlation Coefficients Adjustment (CCA)** method. The goal is to decompose a composite signal (e.g., overlapping chirps) into interpretable frequency subbands, visualize their spectral content, and evaluate reconstruction accuracy.
 
 ---
 
@@ -10,14 +10,14 @@ This folder contains MATLAB scripts for performing **signal decomposition** usin
 
 - Main script to:
   - Generate a synthetic composite chirp signal
-  - Decompose it using DSCA
+  - Decompose it using CCA
   - Group subbands into four frequency bands (VLF, MF, HF, VHF)
   - Display time-domain plots and spectrograms
   - Reconstruct the original signal and compute evaluation metrics
 
-### `dsca.m`
+### `cca.m`
 
-- Core DSCA algorithm that computes narrowband components using sinusoidal correlation
+- Core CCA algorithm that computes narrowband components using sinusoidal correlation
 - Works for both 1D signals and 2D images
 
 ### `generate_chirp.m`
@@ -26,7 +26,7 @@ This folder contains MATLAB scripts for performing **signal decomposition** usin
 
 ### `metrics_signal.m`
 
-- (Optional) Computes SNR, RMSE, correlation, and subband independence metrics
+- Computes SNR, MSE, PCC, and subband independence metrics
 
 ---
 
@@ -43,8 +43,8 @@ This folder contains MATLAB scripts for performing **signal decomposition** usin
 ## 📈 Evaluation Metrics
 
 - **SNR** (Signal-to-Noise Ratio)
-- **RMSE** (Root Mean Square Error)
-- **Correlation Coefficient** between original and reconstructed signal
+- **MSE** (Mean Square Error)
+- **Correlation Coefficient** between the original and reconstructed signal
 - **Maximum Correlation between Subbands** (decorrelation assessment)
 
 ---
