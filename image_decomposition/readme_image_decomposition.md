@@ -1,6 +1,6 @@
-# Image Subband Decomposition using DSCA
+# Image Subband Decomposition using CCA
 
-This folder contains MATLAB scripts for performing **image decomposition** using the proposed **Direct Sinusoidal Component Analysis (DSCA)** method. The goal is to decompose a 2D image into interpretable frequency subbands and compare the results with classical methods like Discrete Wavelet Transform (DWT).
+This folder contains MATLAB scripts for performing **image decomposition** using the proposed **Correlation Coefficients Adjustment (CCA)** method. The goal is to decompose a 2D image into interpretable frequency subbands and compare the results with classical methods like the Discrete Wavelet Transform (DWT).
 
 ---
 
@@ -8,16 +8,16 @@ This folder contains MATLAB scripts for performing **image decomposition** using
 
 ### `main_image_demo.m`
 - Loads and preprocesses the `cameraman.tif` image
-- Applies DSCA to extract 512 spectral subbands and groups them into four main bands (VLF, MF, HF, VHF)
+- Applies CCA to extract 512 spectral subbands and groups them into four main bands (VLF, MF, HF, VHF)
 - Applies DWT using `db4` wavelet for baseline comparison
-- Reconstructs the image from both methods and evaluates them using PSNR, SSIM, and MSE
+- Reconstructs the image from both methods and evaluates them using PCC
 - Displays spatial and frequency-domain visualizations of selected subbands
 
-### `dsca.m`
-- Core DSCA algorithm for both 1D and 2D inputs (shared with signal decomposition)
+### `cca.m`
+- Core CCA algorithm for both 1D and 2D inputs (shared with signal decomposition)
 
 ### `metrics_image.m`
-- Computes PSNR, SSIM, MSE, and maximum correlation between subbands
+- Computes SNR, MSE, and maximum correlation between subbands
 
 ### `normalize_subbands.m`
 - Normalizes the subbands so that their sum matches the dynamic range of the original image
@@ -27,28 +27,26 @@ This folder contains MATLAB scripts for performing **image decomposition** using
 ## 🖼️ Description of the Experiment
 
 - **Input**: Cameraman image resized to 64×64
-- **DSCA Decomposition**: 512 subbands along third dimension
+- **CCA Decomposition**: 512 subbands along third dimension
 - **DWT Comparison**: Using `db4` wavelet, level 1 decomposition
-- **Subband Grouping**: Four DSCA groups by averaging subbands
+- **Subband Grouping**: Four CCA groups by averaging subbands
 
 ---
 
 ## 📊 Evaluation Metrics
 
-- **Energy distribution** across four bands (VLF, MF, HF, VHF)
-- **PSNR** (Peak Signal-to-Noise Ratio)
-- **SSIM** (Structural Similarity Index)
-- **MSE** (Mean Squared Error)
-- **Maximum Inter-Subband Correlation** for DSCA and DWT
+- **Power distribution** across four bands (VLF, MF, HF, VHF)
+- **PCC** (Pearson's Correlation Coefficient)
+- **Maximum Inter-Subband Correlation** for CCA and DWT
 
 ---
 
 ## 🧪 Objectives
 
-- Assess the spectral selectivity of DSCA
-- Visualize spatial and frequency response of each subband
+- Assess the spectral selectivity of CCA
+- Visualize the spatial and frequency response of each subband
 - Compare fidelity of reconstruction vs. DWT
-- Analyze redundancy or independence of extracted components
+- Analyze the redundancy or independence of extracted components
 
 ---
 
