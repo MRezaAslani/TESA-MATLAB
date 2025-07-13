@@ -1,18 +1,18 @@
-# Application 2: Selective Frequency Filtering using DSCA
+# Application 2: Selective Frequency Filtering using CCA
 
-This folder contains MATLAB code for applying **Direct Sinusoidal Component Analysis (DSCA)** as a **bandpass** or **notch filter** for selective frequency manipulation in non-stationary signals.
+This folder contains MATLAB code for applying **Correlation Coefficients Adjustment (CCA)** as a **bandpass** or **bandstop** filter for selective frequency manipulation in non-stationary signals.
 
 ---
 
 ## 📁 Files Included
 
-### `main_bandpass_filter_demo.m` and `main_notch_filter_demo.m`
+### `main_filter_demo.m`
 
 Main script for performing the filtering experiment:
 
 - Generates a synthetic non-stationary signal composed of sinusoidal segments with different frequencies.
 - Constructs a target signal based on selected frequency indices.
-- Applies DSCA-based filtering using STFT-domain spectral masking.
+- Applies CCA-based filtering using STFT-domain spectral masking.
 - Displays time-domain signals and spectrograms.
 - Computes evaluation metrics (SNR, RMSE, Correlation).
 
@@ -22,13 +22,11 @@ Contains helper functions used in the main experiment:
 
 | File                       | Description                                                   |
 | -------------------------- | ------------------------------------------------------------- |
-| `dscaFilter.m`             | Main filtering engine using DSCA and interactive STFT masking |
-| `dsca.m`                   | Performs DSCA and returns subband components                  |
-| `idsca.m`                  | Reconstructs signal from DSCA coefficients                    |
-| `stftGoToZero.m`           | Applies masking in the STFT spectrogram domain                |
-| `spectrogram_collection.m` | (Optional) Multi-resolution spectrogram collection            |
-| `displaySpectrogram.m`     | Displays normalized spectrograms                              |
-| `evaluateMetrics.m`        | Computes SNR, RMSE, correlation                               |
+| `ccaFilter.m`             | Main filtering engine using CCA and interactive STFT masking |
+| `cca.m`                   | Performs CCA and returns subband components                  |
+| `icca.m`                  | Reconstructs signal from CCA coefficients                    |
+| `setSTFT.m`               | Applies masking in the STFT spectrogram domain                |
+| `generateNonStationarySignal.m`        | Generates a non-stationary as input signal                               |
 
 ---
 
@@ -37,19 +35,19 @@ Contains helper functions used in the main experiment:
 After filtering, the output signal is compared with the constructed target signal:
 
 - **SNR**: Signal-to-Noise Ratio
-- **RMSE**: Root Mean Square Error
-- **Correlation Coefficient**: Similarity between filtered and target signals
+- **MSE**: Mean Square Error
+- **PCC**: Pearson's Correlation Coefficient
 
 Example output:
 
 ```
---- Evaluation Metrics for 'bpf' Mode ---
+--- Evaluation Metrics for 'bandpass' Mode ---
 SNR: 1.1950 dB
 RMSE: 0.2470
 Correlation: 0.6658
 ```
 ```
---- Evaluation Metrics for 'notch' Mode ---
+--- Evaluation Metrics for 'bandstop' Mode ---
 SNR: 0.2575 dB
 RMSE: 0.6831
 Correlation: 0.4809
