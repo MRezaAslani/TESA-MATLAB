@@ -14,7 +14,7 @@ Main script for performing the filtering experiment:
 - Constructs a target signal based on selected frequency indices.
 - Applies CCA-based filtering using STFT-domain spectral masking.
 - Displays time-domain signals and spectrograms.
-- Computes evaluation metrics (SNR, RMSE, Correlation).
+- Computes evaluation metrics (SNR, MSE, PCC).
 
 ### `functions/`
 
