@@ -11,7 +11,8 @@
 - Decomposes synthetic signals (e.g., chirp signals) into narrow spectral components
 - Visualizes time-domain waveforms and spectrograms for each subband
 - Evaluates reconstruction accuracy using SNR, MSE, and PCC
-📁 Code: `subband_decomposition/ signal_decomposition/`
+
+📁 Code: `subband_decomposition/signal_decomposition/`
 
 ### 2. Image Subband Decomposition
 
@@ -19,7 +20,7 @@
 - Compares results with DWT-based subband analysis
 - Computes SNR, MSE, and PCC for quantitative evaluation
 
-📁 Code: `subband_decomposition/ image_decomposition/`
+📁 Code: `subband_decomposition/image_decomposition/`
 
 ### 3. Bandpass and Bandstop Filtering
 
