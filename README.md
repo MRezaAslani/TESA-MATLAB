@@ -51,10 +51,10 @@
 CCA-MATLAB/
 ├── README.md
 ├── LICENSE
-├── subband_decomposition/
+├── subband-decomposition/
 ├── filtering/
-├── mask_extraction/
-└── tf_decomposition/             
+├── mask-extraction/
+└── tf-decomposition/             
 ```
 
 ---
