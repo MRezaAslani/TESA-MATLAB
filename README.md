@@ -15,6 +15,7 @@ In the first part, signal decomposition:
 
 📁 Code: `subband-decomposition/signal-decomposition/`
 
+
 In the second part, image decomposition:
 - Decomposes images (e.g., Cameraman) into interpretable spectral bands
 - Compares results with DWT-based subband analysis
@@ -22,21 +23,21 @@ In the second part, image decomposition:
 
 📁 Code: `subband-decomposition/image-decomposition/`
 
-### 3. Bandpass and Bandstop Filtering
+### 2. Bandpass and Bandstop Filtering
 
 - Selectively retains or suppresses time-frequency regions using CCA
 - Demonstrates both passband and stopband behavior using masking
 
 📁 Code: `filtering/`
 
-### 4. Time-Frequency Masking
+### 3. Time-Frequency Masking
 
 - Extracts arbitrary regions in the spectrogram using binary masks
 - Enables precise localization and reconstruction of energy content
 
 📁 Code: `mask-extraction/`
 
-### 5. Time-Frequency Component Separation
+### 4. Time-Frequency Component Separation
 
 - Decomposes a signal/image into additive components with distinct spectral structures
 - Useful for source separation and pattern extraction
