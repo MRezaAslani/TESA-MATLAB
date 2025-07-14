@@ -1,6 +1,6 @@
 # CCA-MATLAB
 
-**Correlation Coefficients Adjustment (CCA)** is a novel feature extraction framework for signal and image processing. This repository contains MATLAB implementations of CCA and demonstrates its capabilities across several applications, including frequency subband-decomposition, bandpass filtering, time-frequency extraction, and component separation.
+**Correlation Coefficients Adjustment (CCA)** is a novel feature extraction framework for signal and image processing. This repository contains MATLAB implementations of CCA and demonstrates its capabilities across several applications, including frequency subband decomposition, bandpass filtering, time-frequency extraction, and component separation.
 
 ---
 
