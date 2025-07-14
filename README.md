@@ -6,21 +6,21 @@
 
 ## 🔬 Applications Covered
 
-### 1. Signal Subband Decomposition
+### 1. Subband Decomposition
 
+In the first part, signal decomposition:
 - Decomposes synthetic signals (e.g., chirp signals) into narrow spectral components
 - Visualizes time-domain waveforms and spectrograms for each subband
 - Evaluates reconstruction accuracy using SNR, MSE, and PCC
 
-📁 Code: `subband_decomposition/signal_decomposition/`
+📁 Code: `subband-decomposition/signal-decomposition/`
 
-### 2. Image Subband Decomposition
-
+In the second part, image decomposition:
 - Decomposes images (e.g., Cameraman) into interpretable spectral bands
 - Compares results with DWT-based subband analysis
 - Computes SNR, MSE, and PCC for quantitative evaluation
 
-📁 Code: `subband_decomposition/image_decomposition/`
+📁 Code: `subband-decomposition/image-decomposition/`
 
 ### 3. Bandpass and Bandstop Filtering
 
@@ -34,14 +34,14 @@
 - Extracts arbitrary regions in the spectrogram using binary masks
 - Enables precise localization and reconstruction of energy content
 
-📁 Code: `mask_extraction/`
+📁 Code: `mask-extraction/`
 
 ### 5. Time-Frequency Component Separation
 
 - Decomposes a signal/image into additive components with distinct spectral structures
 - Useful for source separation and pattern extraction
 
-📁 Code: `tf_decomposition/`
+📁 Code: `tf-decomposition/`
 
 ---
 
