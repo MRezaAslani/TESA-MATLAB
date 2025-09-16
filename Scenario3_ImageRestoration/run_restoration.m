@@ -9,7 +9,7 @@ function results = run_restoration(image_name)
         clean_image = sum(clean_image, 3);  % Convert to grayscale if RGB
     end
     
-    % Downsampling (If your processor is slow, you can use **downsampling** to get an estimate of the calculations)
+    % Downsampling (If your processor is slow, you can use downsampling to get an estimate of the calculations)
     clean_image = imresize(clean_image, [128, 128]);
     clean_image = rescale(clean_image);  % Normalize to [0, 1]
 
@@ -216,4 +216,5 @@ function results = run_restoration(image_name)
         'pcc_tesa_tf', pcc_tesa_tf ...
     );
 end
+
 
