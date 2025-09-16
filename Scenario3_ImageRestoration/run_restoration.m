@@ -8,13 +8,16 @@ function results = run_restoration(image_name)
     if ndims(clean_image) == 3
         clean_image = sum(clean_image, 3);  % Convert to grayscale if RGB
     end
+    
+    % Downsampling (If your processor is slow, you can use **downsampling** to get an estimate of the calculations)
     clean_image = imresize(clean_image, [128, 128]);
     clean_image = rescale(clean_image);  % Normalize to [0, 1]
 
     [m, n] = size(clean_image);
 
     % Create damaged image by setting a central square to zero (simulating damage)
-    square_size = round(min(m, n) / 2);
+    damageAmount = 0.5; % A value of 0 indecates an image with no distortion, and a value of 1 signifies complete damage
+    square_size = round(min(m, n) * damageAmount);
     start_row = round(m/2 - square_size/2) + 1;
     end_row = start_row + square_size - 1;
     start_col = round(n/2 - square_size/2) + 1;
@@ -213,3 +216,4 @@ function results = run_restoration(image_name)
         'pcc_tesa_tf', pcc_tesa_tf ...
     );
 end
+
