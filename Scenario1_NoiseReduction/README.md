@@ -86,4 +86,4 @@ C. Valentini-Botinhão, *Noisy speech database for training speech enhancement a
 
 3. **Run experiment**  
    ```matlab
-   run main_experiment.m
+   run Main.m
