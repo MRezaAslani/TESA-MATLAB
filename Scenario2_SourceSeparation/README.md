@@ -50,16 +50,16 @@ Licensed under the Creative Commons Attribution-NonCommercial 4.0 International 
 
 - **Source**: 11 clean audio files from the **Voice Bank Corpus**
 - **File Names**:
-  - `p250_182.wav`
-  - `p250_059.wav`
-  - `p250_265.wav`
+  - `p273_182.wav`
+  - `p279_059.wav`
+  - `p259_265.wav`
   - `p258_207.wav`
-  - `p250_276.wav`
+  - `p276_276.wav`
   - `p250_226.wav`
   - `p228_035.wav`
-  - `p250_277.wav`
-  - `p250_121.wav`
-  - `p250_224.wav`
+  - `p283_277.wav`
+  - `p279_121.wav`
+  - `p270_224.wav`
   - `p254_026.wav`
 - **Details**: 500 utterances from 28 speakers (14 male, 14 female), English, 48 kHz
 - **Location**: stored in the `materials/` folder
