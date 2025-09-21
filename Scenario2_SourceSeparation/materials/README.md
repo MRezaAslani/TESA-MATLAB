@@ -3,7 +3,7 @@
 This folder is reserved for the **clean audio files** used in the noise reduction experiment.  
 
 ## 📑 Description
-- Contains **10 clean speech files** from the **Voice Bank Corpus**.  
+- Contains **11 clean speech files** from the **Voice Bank Corpus**.  
 - Each file corresponds to one of the 500 utterances (28 speakers: 14 male, 14 female).  
 - Sampling rate: **48 kHz**.  
 
