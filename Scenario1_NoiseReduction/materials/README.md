@@ -13,3 +13,20 @@ This folder is reserved for the **clean audio files** used in the noise reductio
   [Voice Bank Corpus (Edinburgh DataShare)](https://doi.org/10.7488/ds/2117).  
 
 After downloading, place the following files here:  
+
+clean_p250_361.wav
+clean_p254_097.wav
+clean_p254_115.wav
+clean_p258_248.wav
+clean_p269_026.wav
+clean_p273_293.wav
+clean_p277_125.wav
+clean_p279_053.wav
+clean_p279_298.wav
+clean_p279_298.wav
+clean_p287_332.wav
+
+
+## 📖 Citation
+C. Valentini-Botinhão, *Noisy speech database for training speech enhancement algorithms and TTS models*,  
+University of Edinburgh, Edinburgh DataShare, 2017, DOI: [10.7488/ds/2117](https://doi.org/10.7488/ds/2117).
