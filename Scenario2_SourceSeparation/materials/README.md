@@ -14,17 +14,17 @@ This folder is reserved for the **clean audio files** used in the noise reductio
 
 After downloading, place the following files here:  
 
-- `clean_p250_361.wav`
-- `clean_p254_097.wav`
-- `clean_p254_115.wav`
-- `clean_p258_248.wav`
-- `clean_p269_026.wav`
-- `clean_p273_293.wav`
-- `clean_p277_125.wav`
-- `clean_p279_053.wav`
-- `clean_p279_298.wav`
-- `clean_p279_298.wav`
-- `clean_p287_332.wav`
+- `p250_361.wav`
+- `p254_097.wav`
+- `p254_115.wav`
+- `p258_248.wav`
+- `p269_026.wav`
+- `p273_293.wav`
+- `p277_125.wav`
+- `p279_053.wav`
+- `p279_298.wav`
+- `p279_298.wav`
+- `p287_332.wav`
 
 
 ## 📖 Citation
