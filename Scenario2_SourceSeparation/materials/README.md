@@ -14,19 +14,18 @@ This folder is reserved for the **clean audio files** used in the noise reductio
 
 After downloading, place the following files here:  
 
-- `p250_361.wav`
-- `p254_097.wav`
-- `p254_115.wav`
-- `p258_248.wav`
-- `p269_026.wav`
-- `p273_293.wav`
-- `p277_125.wav`
-- `p279_053.wav`
-- `p279_298.wav`
-- `p279_298.wav`
-- `p287_332.wav`
-
-
+  - `p273_182.wav`
+  - `p279_059.wav`
+  - `p259_265.wav`
+  - `p258_207.wav`
+  - `p276_276.wav`
+  - `p250_226.wav`
+  - `p228_035.wav`
+  - `p283_277.wav`
+  - `p279_121.wav`
+  - `p270_224.wav`
+  - `p254_026.wav`
+  - 
 ## 📖 Citation
 C. Valentini-Botinhão, *Noisy speech database for training speech enhancement algorithms and TTS models*,  
 University of Edinburgh, Edinburgh DataShare, 2017, DOI: [10.7488/ds/2117](https://doi.org/10.7488/ds/2117).
