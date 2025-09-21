@@ -64,7 +64,7 @@ C. Valentini-Botinhão, *Noisy speech database for training speech enhancement a
 ---
 
 ## 📁 Repository Structure
-- **`main_experiment.m`** → runs the full experiment  
+- **`Main.m`** → runs the full experiment  
 - **`run_denoising.m`** → core denoising + metrics calculation  
 - **`materials/`** → clean audio files (not included; download separately)  
 - **`results/`** → outputs (signals, metrics, plots)  
