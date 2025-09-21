@@ -52,14 +52,14 @@ C. Valentini-Botinhão, *Noisy speech database for training speech enhancement a
 ---
 
 ## ⚙️ Requirements
-- MATLAB (R2018a or later)  
+- MATLAB (2021a or later)  
 - MATLAB Signal Processing Toolbox (for `stft`, `istft`)  
 - Implementations of:
   - `gla` (Griffin-Lim)  
   - `ot` (Optimal Transport)  
   - `dnn` (Deep Neural Network)  
   - `admm` (ADMM)  
-  - `tesa` (Time-frequency Enhanced Speech Algorithm, authored by M. R. Aslani)  
+  - `tesa` (Proposed Time-Enhanced Spectrogram Alignment Method, authored by M. R. Aslani)  
 
 ---
 
