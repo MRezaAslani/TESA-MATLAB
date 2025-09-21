@@ -1,6 +1,6 @@
 # 🎧 Noise Reduction Experiment (Scenario 1)
 
-MATLAB implementation for **Scenario 1** of a noise reduction experiment, evaluating the **Time-frequency Enhanced Speech Algorithm (TESA)** against four baselines:  
+MATLAB implementation for **Scenario 1** of a noise reduction experiment, evaluating the **Time-Enhanced Spectrogram Alignment (TESA)** against four baselines:  
 - Griffin-Lim Algorithm (**GLA**)  
 - Optimal Transport (**OT**)  
 - Deep Neural Network (**DNN**)  
