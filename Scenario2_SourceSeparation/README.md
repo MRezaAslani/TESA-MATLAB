@@ -49,6 +49,18 @@ Licensed under the Creative Commons Attribution-NonCommercial 4.0 International 
 ## 📂 Dataset
 
 - **Source**: 11 clean audio files from the **Voice Bank Corpus**
+- **File Names**:
+  - `p250_182.wav`
+  - `p250_059.wav`
+  - `p250_265.wav`
+  - `p258_207.wav`
+  - `p250_276.wav`
+  - `p250_226.wav`
+  - `p228_035.wav`
+  - `p250_277.wav`
+  - `p250_121.wav`
+  - `p250_224.wav`
+  - `p254_026.wav`
 - **Details**: 500 utterances from 28 speakers (14 male, 14 female), English, 48 kHz
 - **Location**: stored in the `materials/` folder
 
@@ -72,7 +84,7 @@ C. Valentini-Botinhão, *Noisy speech database for training speech enhancement a
 
 ## 📁 Repository Structure
 
-- `main_experiment.m` → runs the full experiment
+- `Main.m` → runs the full experiment
 - `run_separation.m` → core source separation + metrics calculation
 - `materials/` → clean audio files (not included; download separately)
 - `results/` → outputs (signals, metrics, plots)
