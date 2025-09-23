@@ -26,7 +26,7 @@ They are **freely available** and widely used for testing and evaluation.
 
 ## 👀 Preview (sample images)
 
-| Cameraman | Lena | Baboon | Peppers |
+| Lake | Lena | House | Peppers |
 |-----------|------|--------|---------|
 | ![lake](lake.jpg) | ![lena](lena.jpg) | ![house](house.jpg) | ![peppers](peppers.jpg) |
 
