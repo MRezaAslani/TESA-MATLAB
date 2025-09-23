@@ -28,6 +28,6 @@ They are **freely available** and widely used for testing and evaluation.
 
 | Cameraman | Lena | Baboon | Peppers |
 |-----------|------|--------|---------|
-| ![lake](lake.JPG) | ![lena](lena.JPG) | ![house](house.JPG) | ![peppers](peppers.JPG) |
+| ![lake](lake.jpg) | ![lena](lena.jpg) | ![house](house.jpg) | ![peppers](peppers.jpg) |
 
 > Previews are provided in `.png` format for GitHub display, while the experiment itself uses `.tif` files.
