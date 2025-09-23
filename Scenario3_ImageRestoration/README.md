@@ -1,4 +1,4 @@
-# 🖼️ Image Restoration Experiment
+# 🖼️ Image Restoration Experiment (Scenario 3)
 
 MATLAB implementation for an **image restoration experiment**, evaluating the proposed **Time-Enhanced Spectrogram Alignment (TESA)** against four baseline methods:
 
@@ -12,7 +12,7 @@ MATLAB implementation for an **image restoration experiment**, evaluating the pr
 ## 📊 Experiment Setup
 
 - **Dataset**: 10 grayscale images  
-- **Damage Levels**: `1%, 10%, 30%, 50%, 70%, 90%, 99%`  
+- **Damage Levels**: `1%, 20%, 40%, 60%, 80%, 99%`  
 - **Damage Simulation**: central square region zeroed  
 
 **Evaluation Metrics**:  
