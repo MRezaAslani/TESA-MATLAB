@@ -1,4 +1,4 @@
-% Main script to run the image restoration experiment for 10 images and 7 damage percentages,
+% Main script to run the image restoration experiment for 10 images and 6 damage percentages,
 % compute mean/std of PCC (time) and MSE (tf), display results table for each experiment in run_restoration,
 % save reconstructed signals in image-specific folders, and display results with smooth interpolated grayscale plots.
 % Plots and summary tables exclude the Observation method.
@@ -28,7 +28,7 @@ images = {...
 num_images = length(images);
 
 % Damage percentages
-percentages = [0.01, 0.1, 0.3, 0.5, 0.7, 0.9, 0.99];
+percentages = [0.01, 0.2, 0.4, 0.6, 0.8, 0.99];
 num_percentages = length(percentages);
 
 % Initialize storage for metrics (num_images x num_percentages)
@@ -212,5 +212,6 @@ catch
     % Suppress plot save error
 end
 close(gcf);
+
 
 fprintf('Check %s for reconstructed signals, metrics, and plots.\n', output_dir);
