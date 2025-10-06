@@ -101,7 +101,7 @@ If you use this repository in your research, please cite the following paper:
 
 ```
 Time-Domain Enhanced Spectrogram Alignment Based on Adam Optimization
-Authors: M. R. Aslani, A. Nouri, and _et al_.
+Authors: M. R. Aslani, A. Nouri, et al.
 Submitted to IEEE Transactions, 2025.
 ```
 
