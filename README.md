@@ -60,8 +60,6 @@ Additionally, runtime analysis demonstrates TESA’s adaptability to real-time o
   - Spectrogram window size  
   - Hop length and overlap  
   - Frequency and temporal resolutions  
-  - Iteration count and optimizer configuration  
-- Useful for determining real-time feasibility and efficiency trade-offs  
 
 📁 Code: `Runtime/`
 
