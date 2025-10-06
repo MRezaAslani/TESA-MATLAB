@@ -100,9 +100,9 @@ You may use, modify, and distribute the code for academic and research purposes 
 If you use this repository in your research, please cite the following paper:
 
 ```
-[Paper Title Placeholder]
-Authors: [Author Names Placeholder]
-Submitted to IEEE Transactions on Signal Processing, 2025.
+Time-Domain Enhanced Spectrogram Alignment Based on Adam Optimization
+Authors: M. R. Aslani, A. Nouri
+Submitted to IEEE Transactions, 2025.
 ```
 
 Or use the BibTeX entry:
@@ -113,8 +113,8 @@ Or use the BibTeX entry:
   title        = {Time-domain Enhanced Spectrogram Alignment (TESA): MATLAB Implementation},
   year         = {2025},
   publisher    = {GitHub},
-  howpublished = {\url{https://github.com/[yourusername]/TESA-MATLAB}},
-  note         = {Submitted to IEEE Transactions on Signal Processing}
+  howpublished = {\url{https://github.com/MRezaAslani/TESA-MATLAB}},
+  note         = {Submitted to IEEE Transactions}
 }
 ```
 
