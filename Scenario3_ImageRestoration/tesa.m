@@ -5,7 +5,7 @@
 % License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/)
 % Description:
 % TESA_BASED_ON_GRADIENT_DRIVEN_ADAM_OPTIMIZATION
-% Implements Time-Enhanced Spectrogram Alignment (TESA) using Adam to optimize time-domain signal samples.
+% Implements Time-domain Enhanced Spectrogram Alignment (TESA) using Adam to optimize time-domain signal samples.
 % Computes and stores the loss function value at each iteration.
 % Inputs:
 %   x: Initial observation signal (damaged, 1D column vector, real-valued)
@@ -108,4 +108,5 @@ function val = getfield_default(s, field, default)
     else
         val = default;
     end
+
 end
