@@ -1,61 +1,68 @@
-# CCA-MATLAB
+# TESA-MATLAB
 
-**Correlation Coefficients Adjustment (CCA)** is a novel feature extraction framework for signal and image processing. This repository contains MATLAB implementations of CCA and demonstrates its capabilities across several applications, including frequency subband decomposition, bandpass filtering, time-frequency extraction, and component separation.
+**Time-domain Enhanced Spectrogram Alignment (TESA)** is a novel optimization-based framework designed to improve phase estimation and signal reconstruction from spectrogram magnitudes. Unlike conventional methods such as Griffin-Lim, Optimal Transport, Deep Neural Networks, and ADMM-based algorithms, TESA introduces an **adaptive moment estimation optimizer** that iteratively adjusts temporal or spatial samples to align the input spectrogram with the target magnitude distribution.
+
+This repository provides MATLAB implementations of TESA and demonstrates its capabilities across multiple challenging applications, including **noise reduction**, **source separation**, and **image restoration**.
 
 ---
 
-## 🔬 Applications Covered
+## 🔬 Overview
 
-### 1. Subband Decomposition
+TESA formulates a **hypothesis function** based on spectrogram magnitude and optimizes it using a gradient derived analytically in the paper. The algorithm progressively refines the observation in the time domain to minimize the mismatch between reconstructed and target spectrograms.
 
-In the first part, signal decomposition:
-- Decomposes synthetic signals (e.g., chirp signals) into narrow spectral components
-- Visualizes time-domain waveforms and spectrograms for each subband
-- Evaluates reconstruction accuracy using SNR, MSE, and PCC
+Comprehensive experiments were conducted on:
+- **Voice Bank Corpus** for audio-based scenarios  
+- **Ten standard benchmark images** for image-based tasks  
 
-📁 Code: `subband-decomposition/signal-decomposition/`
+TESA consistently outperformed the best baseline methods in various high-noise, high-distortion, and data-loss conditions.
 
+### 📈 Reported Improvements
 
-In the second part, image decomposition:
-- Decomposes images (e.g., Cameraman) into interpretable spectral bands
-- Compares results with DWT-based subband analysis
-- Computes SNR, MSE, and PCC for quantitative evaluation
+| Metric | Improvement over Best Baseline |
+|:--------|:------------------------------:|
+| Signal-to-Noise Ratio (SNR) | **+1.9416 dB** |
+| Signal-to-Distortion Ratio (SDR) | **+3.8635 dB** |
+| Pearson Correlation Coefficient (PCC) | **+24.9770%** |
 
-📁 Code: `subband-decomposition/image-decomposition/`
+Additionally, runtime analysis demonstrates TESA’s adaptability to real-time or low-resolution spectrogram configurations.
 
-### 2. Bandpass and Bandstop Filtering
+---
 
-- Selectively retains or suppresses time-frequency regions using CCA
-- Demonstrates both passband and stopband behavior using masking
+## ⚙️ Applications & Scenarios
 
-📁 Code: `filtering/`
+### 1. Noise Reduction
+- Suppresses additive and structural noise using iterative spectrogram refinement  
+- Evaluates restoration accuracy via SNR, SDR, and PCC metrics  
 
-### 3. Time-Frequency Masking
+📁 Code: `Scenario1_NoiseReduction/`
 
-- Extracts arbitrary regions in the spectrogram using binary masks
-- Enables precise localization and reconstruction of energy content
+---
 
-📁 Code: `mask-extraction/`
+### 2. Source Separation
+- Decomposes mixtures into individual sources using optimized phase alignment  
+- Benchmarks TESA against Griffin-Lim and deep learning–based separation methods  
 
-### 4. Time-Frequency Component Separation
+📁 Code: `Scenario2_SourceSeparation/`
 
-- Decomposes a signal/image into additive components with distinct spectral structures
-- Useful for source separation and pattern extraction
+---
 
-📁 Code: `tf-decomposition/`
+### 3. Image Restoration
+- Restores degraded or partially missing images by optimizing frequency–domain consistency  
+- Supports grayscale and RGB image recovery under severe corruption levels  
+
+📁 Code: `Scenario3_ImageRestoration/`
 
 ---
 
 ## 📦 Repository Structure
 
 ```
-CCA-MATLAB/
+TESA-MATLAB/
 ├── README.md
 ├── LICENSE
-├── subband-decomposition/
-├── filtering/
-├── mask-extraction/
-└── tf-decomposition/             
+├── Scenario1_NoiseReduction/
+├── Scenario2_SourceSeparation/
+└── Scenario3_ImageRestoration/
 ```
 
 ---
@@ -65,28 +72,48 @@ CCA-MATLAB/
 - MATLAB R2021a or later (recommended)
 - Signal Processing Toolbox
 - Image Processing Toolbox
+- Optimization Toolbox
 
 ---
 
 ## 📄 License
 
-This project is released under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+This project is distributed under the **Creative Commons Attribution–NonCommercial 4.0 International License (CC BY-NC 4.0)**.  
+You may use, modify, and distribute the code for academic and research purposes with appropriate citation.
 
 ---
 
-## 📫 Citation
+## 📚 Citation
 
-If you use this code in your research, please cite the associated paper:
+If you use this repository in your research, please cite the following paper:
 
 ```
 [Paper Title Placeholder]
 Authors: [Author Names Placeholder]
-Submitted to IEEE Transactions on Signal Processing
+Submitted to IEEE Transactions on Signal Processing, 2025.
+```
+
+Or use the BibTeX entry:
+
+```bibtex
+@misc{tesa_matlab_2025,
+  author       = {M. R. Aslani},
+  title        = {Time-domain Enhanced Spectrogram Alignment (TESA): MATLAB Implementation},
+  year         = {2025},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/[yourusername]/TESA-MATLAB}},
+  note         = {Submitted to IEEE Transactions on Signal Processing}
+}
 ```
 
 ---
 
 ## 🔗 Contact
 
-For questions or collaboration inquiries, contact: mr.aslani@shdu.ac.ir
+For technical questions or collaboration inquiries, please contact:  
+📧 **mr.aslani@shdu.ac.ir**
 
+---
+
+## 🧠 Keywords
+`Signal Reconstruction`, `Spectrogram Alignment`, `Phase Estimation`, `Adaptive Optimization`, `Noise Reduction`, `Source Separation`, `Image Restoration`, `MATLAB`
