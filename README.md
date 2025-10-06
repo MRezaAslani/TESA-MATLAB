@@ -2,7 +2,7 @@
 
 **Time-domain Enhanced Spectrogram Alignment (TESA)** is a novel optimization-based framework designed to improve phase estimation and signal reconstruction from spectrogram magnitudes. Unlike conventional methods such as Griffin-Lim, Optimal Transport, Deep Neural Networks, and ADMM-based algorithms, TESA introduces an **adaptive moment estimation optimizer** that iteratively adjusts temporal or spatial samples to align the input spectrogram with the target magnitude distribution.
 
-This repository provides MATLAB implementations of TESA and demonstrates its capabilities across multiple challenging applications, including **noise reduction**, **source separation**, and **image restoration**.
+This repository provides MATLAB implementations of TESA and demonstrates its capabilities across multiple challenging applications, including **noise reduction**, **source separation**, **image restoration**, and **runtime performance analysis**.
 
 ---
 
@@ -54,6 +54,19 @@ Additionally, runtime analysis demonstrates TESA’s adaptability to real-time o
 
 ---
 
+### 4. Runtime Evaluation
+- Analyzes computational performance of TESA under varying spectrogram parameters  
+- Measures runtime with respect to:
+  - Spectrogram window size  
+  - Hop length and overlap  
+  - Frequency and temporal resolutions  
+  - Iteration count and optimizer configuration  
+- Useful for determining real-time feasibility and efficiency trade-offs  
+
+📁 Code: `Runtime/`
+
+---
+
 ## 📦 Repository Structure
 
 ```
@@ -62,7 +75,8 @@ TESA-MATLAB/
 ├── LICENSE
 ├── Scenario1_NoiseReduction/
 ├── Scenario2_SourceSeparation/
-└── Scenario3_ImageRestoration/
+├── Scenario3_ImageRestoration/
+└── Runtime/
 ```
 
 ---
@@ -72,7 +86,7 @@ TESA-MATLAB/
 - MATLAB R2021a or later (recommended)
 - Signal Processing Toolbox
 - Image Processing Toolbox
-- Optimization Toolbox
+- Optimization Toolbox (for gradient-based solvers)
 
 ---
 
@@ -116,4 +130,4 @@ For technical questions or collaboration inquiries, please contact:
 ---
 
 ## 🧠 Keywords
-`Signal Reconstruction`, `Spectrogram Alignment`, `Phase Estimation`, `Adaptive Optimization`, `Noise Reduction`, `Source Separation`, `Image Restoration`, `MATLAB`
+`Signal Reconstruction`, `Spectrogram Alignment`, `Phase Estimation`, `Adaptive Optimization`, `Noise Reduction`, `Source Separation`, `Image Restoration`, `Runtime Analysis`, `MATLAB`
