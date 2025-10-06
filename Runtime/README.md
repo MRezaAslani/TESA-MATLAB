@@ -68,7 +68,7 @@ A tabular dataset where each row represents a signal length and each column corr
 
 | Length | Win512_Overlap85 | Win384_Overlap80 | Win256_Overlap70 | Win128_Overlap50 |
 |--------:|----------------:|----------------:|----------------:|----------------:|
-| 10000 | 0.0153 | 0.0128 | 0.0104 | 0.0089 |
+| 10000 | 0.8686 | 0.0880 | 0.0551 | 0.0459 |
 | 20000 | ... | ... | ... | ... |
 
 ### 2. **runtime_plot_tesa_multi_res.png**
