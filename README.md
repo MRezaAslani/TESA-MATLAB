@@ -102,7 +102,7 @@ If you use this repository in your research, please cite the following paper:
 ```
 Time-Domain Enhanced Spectrogram Alignment Based on Adam Optimization
 Authors: M. R. Aslani, A. Nouri, et al.
-Submitted to IEEE Transactions, 2025.
+Submitted to the Scientific Reports journal, 2025.
 ```
 
 Or use the BibTeX entry:
@@ -114,7 +114,7 @@ Or use the BibTeX entry:
   year         = {2025},
   publisher    = {GitHub},
   howpublished = {\url{https://github.com/MRezaAslani/TESA-MATLAB}},
-  note         = {Submitted to IEEE Transactions}
+  note         = {Submitted to the Scientific Reports journal}
 }
 ```
 
